@@ -1,18 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './TrackList.css';
 
 import Track from '../Track/Track'
 
-class TrackList extends Component {
-    render() {
-        return (
-            <div className="TrackList">
-                {this.props.tracks.map(track =>
-                    <Track track={track} key={track.id}/>
-                )}
-            </div>
-        );
-    }
+const TrackList = (props) => {
+    return (
+        <div className="TrackList">
+            {props.tracks.map(track =>
+                <Track track={track} key={track.id} onAdd={props.onAdd} onRemove={props.onRemove} isRemoval={props.isRemoval} />
+            )}
+        </div>
+    );
 }
 
 export default TrackList;
