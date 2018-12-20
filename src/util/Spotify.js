@@ -2,7 +2,7 @@ let accessToken;
 let expiresIn;
 
 const clientId = '2fd6b89a38eb4785b4178749b9eef147';
-const redirectURI = 'http://kokopelli84-jammmin.surge.sh';
+const redirectURI = 'http://kokopelli84-jammmin.surge.sh/';
 
 const Spotify = {
     getAccessToken() {
