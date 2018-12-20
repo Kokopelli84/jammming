@@ -63,8 +63,6 @@ class App extends Component {
   }
 
   search = (searchTerm) => {
-    console.log(`Search Spotify for "${searchTerm}"`);
-    Spotify.getAccessToken()
     Spotify.search(searchTerm).then(tracks => {
       this.setState({
         searchResults: tracks
