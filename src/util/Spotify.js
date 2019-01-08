@@ -4,10 +4,10 @@ let expiresIn;
 const clientId = '2fd6b89a38eb4785b4178749b9eef147';
 
 // For testing
-const redirectURI = 'http://localhost:3000/';
+//const redirectURI = 'http://localhost:3000/';
 
 // on deployment
-//const redirectURI = 'http://kokopelli84-jammmin.surge.sh/';
+const redirectURI = 'http://kokopelli84-jammmin.surge.sh/';
 
 const Spotify = {
     getAccessToken() {
