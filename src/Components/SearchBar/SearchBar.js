@@ -20,15 +20,24 @@ class SearchBar extends Component {
         })
     }
 
+    handleSubmit = (e) => {
+        e.preventDefault();
+        this.search()
+    }
+
     render() {
         return (
-            <div className="SearchBar">
-                <input placeholder="Enter A Song, Album, or Artist" onChange={this.handleTermChange} />
-                <a onClick={this.search} >SEARCH</a>
-            </div>
+            <form onSubmit={this.handleSubmit}>
+                <div className="SearchBar">
+                    <input placeholder="Enter A Song, Album, or Artist" onChange={this.handleTermChange} />
+                    <button type="submit" >SEARCH</button>
+                </div>
+            </form>
         );
     }
 
 }
 
 export default SearchBar;
+
+//http://kokopelli84-jammmin.surge.sh/
